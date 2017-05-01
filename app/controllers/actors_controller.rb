@@ -8,6 +8,7 @@ class ActorsController < ApplicationController
   end
 
   def new_form
+    render("actors/new_form.html.erb")
   end
 
   def create_row
@@ -24,6 +25,7 @@ class ActorsController < ApplicationController
 
   def edit_form
     @actor = Actor.find(params[:id])
+    render("actors/edit_form.html.erb")
   end
 
   def update_row
